@@ -37,7 +37,7 @@ def tweet_check(twitter_checked=True):
     if  horas == 23 and minutos == 30:
         Mensagem("Boa noite")
         time.sleep(60)
-    if horas == 13 and minutos == 45:
+    if horas == 16 and minutos == 45:
         print("tá")    
         
 if __name__ == '__main__':
