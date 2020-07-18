@@ -38,7 +38,8 @@ def tweet_check(twitter_checked=True):
         Mensagem("Boa noite")
         time.sleep(60)
     if horas == 16 and minutos == 45:
-        print("tá")    
+        print("tá") 
+        time.sleep(60)   
         
 if __name__ == '__main__':
     while True:
