@@ -17,7 +17,7 @@ frase = ""
 def Mensagem(frase):
     for tweet in tweepy.Cursor(api.friends, screen_name = "testandobot007").items():
      try:
-         if tweet.screen_name != "SFCAlvinegro" and tweet.screen_name != "VilaSantastica":
+         if tweet.screen_name != "SFCAlvinegro" and tweet.screen_name != "VilaSantastica" and tweet.screen_name == "instasantosfc_":
              api.update_status(frase + " @" + tweet.screen_name)
          print(tweet.screen_name)
      except tweepy.TweepError as e:
@@ -28,7 +28,7 @@ def Mensagem(frase):
 def tweet_check(twitter_checked=True):
     minutos = datetime.datetime.now().minute
     horas = datetime.datetime.now().hour
-    if  horas == 12 and minutos == 20:
+    if  horas == 11 and minutos == 30:
         Mensagem("Bom dia")
         time.sleep(60)
     if  horas == 16 and minutos == 30:
