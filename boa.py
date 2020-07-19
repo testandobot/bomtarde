@@ -28,7 +28,7 @@ def Mensagem(frase):
 def tweet_check(twitter_checked=True):
     minutos = datetime.datetime.now().minute
     horas = datetime.datetime.now().hour
-    if  horas == 11 and minutos == 30:
+    if  horas == 12 and minutos == 20:
         Mensagem("Bom dia")
         time.sleep(60)
     if  horas == 16 and minutos == 30:
